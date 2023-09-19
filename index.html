@@ -17,14 +17,20 @@
       <input type="date" id="date" placeholder="Date of Occasion">
       <fieldset>
         <legend>What are you looking for on the day?</legend>
-        <input type="checkbox" id="Drop&Arrange" name="Drop&Arrange"/>
-        <label for="Drop&Arrange">Drop off & arrangement at venue</label>
+        <label for="Drop&Arrange">
+          <input type="radio" id="Drop&Arrange" name="DayAction"/>
+          Drop off & arrange at venue
+        </label>
 
-        <input type="checkbox" id="Drop" name="Drop"/>
-        <label for="Drop">Drop off only</label>
+        <label for="Drop">
+          <input type="radio" id="Drop" name="DayAction"/>
+          Drop off only
+        </label>
 
-        <input type="checkbox" id="Drop?" name="Drop?"/>
-        <label for="Drop?">Not sure yet!</label>
+        <label for="Drop?">
+          <input type="radio" id="Drop?" name="DayAction"/>
+        Not sure yet!
+        </label>
         <!--Check that '/' is correct at end of input info-->
       </fieldset>
       <fieldset>
