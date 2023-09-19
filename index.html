@@ -15,9 +15,31 @@
       <input type="tel" id="phone" placeholder="Mobile Number" pattern="[0-9]{5}+[ ]+[0-9]{6}"><br>
       <input type="email" id="email" placeholder="Email"><br>
       <input type="date" id="date" placeholder="Date of Occasion">
+      <fieldset>
+        <legend>What are you looking for on the day?</legend>
+        <input type="checkbox" id="Drop&Arrange" name="Drop&Arrange"/>
+        <label for="Drop&Arrange">Drop off & arrangement at venue</label>
+
+        <input type="checkbox" id="Drop" name="Drop"/>
+        <label for="Drop">Drop off only</label>
+
+        <input type="checkbox" id="Drop?" name="Drop?"/>
+        <label for="Drop?">Not sure yet!</label>
+        <!--Check that '/' is correct at end of input info-->
+      </fieldset>
+      <fieldset>
+        <legend>If you have any inital thoughts or notes that you'd like to pass on, then please let us know! Here are a few pointers that might help to get things started:</legend>
+      <ul>
+        <li>Number of guests</li>
+        <li>Colour scheme</li>
+        <li>Type/number of flower arrangements. <i>Don't worry, this doesn't have to be exact for now, it's just to give us an idea!</i></li>
+      </ul>
+    </fieldset>
     
-      <legend>Occasion</legend>
-      <!--Possibly get rid of checkboxes as Funeral might be a bit awks
+    <!--
+      <fieldset>
+        <legend>Occasion</legend>
+      Possibly get rid of checkboxes as Funeral might be a bit awks
       <div>
         <input type="checkbox" id="wedding" name="wedding"/>
         <label for="wedding">Wedding</label> 
@@ -32,6 +54,7 @@
         <input type="checkbox" id="other" name="other"/>
         <label for="other">Other</label>
       </div>
+      </fieldset>
 
       <div>
          Need to add in javascript function so that this text box becomes active if 'other' checkbox is selected
