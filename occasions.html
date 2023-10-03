@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h1>What's the Occasion?</h1>
+	</head>
 
+	<body>
+		<div class="occasion">
+			<p>Please fill in the form below & we'll be in touch as soon as we can with your own personalised options.</p>
+     <form>
+      <input type="text" id="name" placeholder="Name"><br>
+      <input type="tel" id="phone" placeholder="Mobile Number" pattern="[0-9]{5}+[ ]+[0-9]{6}"><br>
+      <input type="email" id="email" placeholder="Email"><br>
+      <input type="date" id="date" placeholder="Date of Occasion">
+
+      <fieldset>
+        <legend>What are you looking for on the day?</legend>
+         <label for="Drop&Arrange">
+          <input type="radio" id="Drop&Arrange" name="DayAction"/>
+          Drop off & arrange at venue
+         </label>
+
+         <label for="Drop">
+          <input type="radio" id="Drop" name="DayAction"/>
+          Drop off only
+         </label>
+
+         <label for="Drop?">
+          <input type="radio" id="Drop?" name="DayAction"/>
+        Not sure yet!
+         </label>
+        <!--Check that '/' is correct at end of input info-->
+      </fieldset>
+     </form>
+		</div>
+	</body>
+</html>
