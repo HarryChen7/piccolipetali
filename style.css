@@ -1,5 +1,7 @@
-#testing
+# testing
 
-h1 {
+.h1 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
 	color: red;
 }
