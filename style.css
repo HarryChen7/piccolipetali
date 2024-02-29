@@ -1,5 +1,11 @@
 # testing
 
+.Div1 {
+	border-style: double;
+	border-width: 5px;
+	border-radius: 50%;
+}
+
 .h1 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: bold;
