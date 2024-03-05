@@ -1,13 +1,13 @@
 
 
-.Div1 {
+Div1 {
 	border-style: double;
 	border-width: 5px;
 	border-radius: 50%;
 	text-align: center;
 }
 
-.h1 {
+h1 {
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: bold;
 	color: green;
