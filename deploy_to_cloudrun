@@ -2,8 +2,8 @@
 #
 # Overview:
 #
-# 1. Authenticate to Google Cloud
-# 2. Deploy it to Cloud Run
+# 1. Authenticate to Google Cloud  DONE
+# 2. Deploy it to Cloud Run  DONE
 #
 # To configure this workflow:
 #
@@ -13,7 +13,7 @@
 #    Cloud Build          cloudbuild.googleapis.com
 #    Artifact Registry    artifactregistry.googleapis.com
 #
-# 2. Create and configure Workload Identity Federation for GitHub (https://github.com/google-github-actions/auth#setting-up-workload-identity-federation)
+# 2. Create and configure Workload Identity Federation for GitHub (https://github.com/google-github-actions/auth#setting-up-workload-identity-federation) DONE (Below)
 
 jobs:
   build:
@@ -37,7 +37,7 @@ jobs:
 
 
 #
-# 3. Ensure the required IAM permissions are granted
+# 3. Ensure the required IAM permissions are granted  DONE
 #
 #    Cloud Run
 #      roles/run.admin
@@ -54,9 +54,9 @@ jobs:
 #
 #    NOTE: You should always follow the principle of least privilege when assigning IAM roles
 #
-# 4. Create GitHub secrets for WIF_PROVIDER and WIF_SERVICE_ACCOUNT
+# 4. Create GitHub secrets for WIF_PROVIDER and WIF_SERVICE_ACCOUNT  DONE
 #
-# 5. Change the values for the SERVICE and REGION environment variables (below).
+# 5. Change the values for the SERVICE and REGION environment variables (below).  DONE
 #
 # For more support on how to run this workflow, please visit https://github.com/marketplace/actions/deploy-to-cloud-run
 #
@@ -74,9 +74,9 @@ on:
       - $default-branch
 
 env:
-  PROJECT_ID: YOUR_PROJECT_ID # TODO: update Google Cloud project id
-  SERVICE: YOUR_SERVICE_NAME # TODO: update Cloud Run service name
-  REGION: YOUR_SERVICE_REGION # TODO: update Cloud Run service region
+  PROJECT_ID: piccoli-petali # TODO: update Google Cloud project id  DONE
+  SERVICE: piccolipetali-github-io # TODO: update Cloud Run service name  DONE
+  REGION: europe-west2 # TODO: update Cloud Run service region  DONE
 
 jobs:
   deploy:
