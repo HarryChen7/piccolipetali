@@ -15,25 +15,25 @@
 #
 # 2. Create and configure Workload Identity Federation for GitHub (https://github.com/google-github-actions/auth#setting-up-workload-identity-federation) DONE (Below)
 
-jobs:
-  build:
-    # Allow the job to fetch a GitHub ID token
-    permissions:
-      id-token: write
-      contents: read
+#jobs:
+# build:
+#  # Allow the job to fetch a GitHub ID token
+#    permissions:
+#      id-token: write
+#      contents: read
 
-    runs-on: ubuntu-latest
+#    runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
+#    steps:
+#      - uses: actions/checkout@v3
 
-      - id: 'auth'
-        name: 'Authenticate to Google Cloud'
-        uses: 'google-github-actions/auth@v1'
-        with:
-          create_credentials_file: true
-          workload_identity_provider: 'projects/362048345777/locations/global/workloadIdentityPools/github-piccoli-petali/providers/Github_piccoli_petali'
-          service_account: 'piccolipetali-github-sa@piccoli-petali.iam.gserviceaccount.com'
+#      - id: 'auth'
+#        name: 'Authenticate to Google Cloud'
+#        uses: 'google-github-actions/auth@v1'
+#        with:
+#          create_credentials_file: true
+#          workload_identity_provider: 'projects/362048345777/locations/global/workloadIdentityPools/github-piccoli-petali/providers/Github_piccoli_petali'
+#          service_account: 'piccolipetali-github-sa@piccoli-petali.iam.gserviceaccount.com'
 
 
 #
