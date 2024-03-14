@@ -1,17 +1,17 @@
 
 
-Div1 {
-	border-style: double;
-	border-width: 5px;
-	border-radius: 50%;
-	margin: auto;
-	text-align: center;
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	color: green;
 }
 
 h1 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: bold;
-	color: green;
+	text-align: center;
+}
+
+.Div1 {
+	margin: auto;
 	text-align: center;
 }
 
@@ -21,4 +21,62 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	border-style: double;
+	border-width: 5px;
+	border-radius: 50%;
+}
+
+.Div2 {
+	text-align: center;
+}
+
+#name {
+	width: 30%;
+	padding: 5px;
+	margin: 5px;
+	color: green;
+	border: solid purple;
+	border-radius: 6px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#name:hover {
+	box-shadow: 4px 4px rgb(53, 1, 53);
+}
+
+#email {
+	width: 30%;
+	padding: 5px;
+	margin: 5px;
+	border: solid purple;
+	border-radius: 6px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#email:hover {
+	box-shadow: 4px 4px rgb(53, 1, 53);
+}
+
+#phone {
+	width: 30%;
+	padding: 5px;
+	margin: 5px;
+	border: solid purple;
+	border-radius: 6px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#phone:hover {
+	box-shadow: 4px 4px rgb(53, 1, 53);
+}
+
+#date {
+	padding: 5px;
+	border: solid purple;
+	border-radius: 6px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#date:hover {
+	box-shadow: 4px 4px rgb(53, 1, 53);
 }
