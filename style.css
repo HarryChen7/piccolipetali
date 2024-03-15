@@ -14,18 +14,24 @@ body{
 h1 {
 	font-weight: bold;
 	text-align: center;
+	font-size: 15vw;
+}
+
+#ComingSoon {
+	font-size: 10vw;
 }
 
 .Div1 {
 	margin: auto;
 	text-align: center;
+	font-size: 5vw;
 }
 
 img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 35%;
+	width: 50%;
 	border-style: double;
 	border-width: 5px;
 	border-radius: 50%;
@@ -33,16 +39,18 @@ img {
 
 .Div2 {
 	text-align: center;
+	font-size: 5vw;
 }
 
 #name {
-	width: 30%;
+	width: 50%;
 	padding: 5px;
 	margin: 5px;
 	color: green;
 	border: solid purple;
 	border-radius: 6px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
 }
 
 #name:hover {
@@ -50,12 +58,13 @@ img {
 }
 
 #email {
-	width: 30%;
+	width: 50%;
 	padding: 5px;
 	margin: 5px;
 	border: solid purple;
 	border-radius: 6px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
 }
 
 #email:hover {
@@ -69,6 +78,7 @@ img {
 	border: solid purple;
 	border-radius: 6px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
 }
 
 #phone:hover {
@@ -80,6 +90,7 @@ img {
 	border: solid purple;
 	border-radius: 6px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
 }
 
 #date:hover {
