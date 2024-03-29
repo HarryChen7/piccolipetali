@@ -96,3 +96,33 @@ img {
 #date:hover {
 	box-shadow: 4px 4px rgb(53, 1, 53);
 }
+
+#message {
+	width: 50%;
+	padding: 5px;
+	margin: 5px;
+	border: solid purple;
+	border-radius: 6px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
+
+	
+}
+
+#button {
+	padding: 5px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: solid purple;
+	border-radius: 6px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 3vw;
+}
+
+#button:hover {
+	box-shadow: 4px 4px rgb(53, 1, 53);
+}
+
+#button:active {
+  transform: translateY(4px);
+}
