@@ -19,15 +19,16 @@
       
     <div class="Div2">
      <p>... but you can still say hello! Fill in the form below and we'll be in touch as soon as we can!</p>
-     <form>
-      <input type="text" id="name" placeholder="Name"><br>
-      <input type="email" id="email" placeholder="Email"><br>
-      <input type="tel" id="phone" placeholder="Mobile Number" pattern="[0-9]{5}+[ ]+[0-9]{6}"><br>
-      <textarea type="message" id="message" placeholder="Message:"><br>
+     <form id="contact-form" method="POST" action="send" enctype="form-data">
+      <input type="text" id="name" name="name" placeholder="Name" required><br>
+      <input type="email" id="email" name="email" placeholder="Email" required><br>
+      <input type="tel" id="phone" name="phone" placeholder="Mobile Number" pattern="[0-9]{5}+[ ]+[0-9]{6}" required><br>
+      <textarea type="message" id="message" name="message" placeholder="Message:" required><br>
       <p>Date of the occasion</p>
-      <input type="date" id="date" placeholder="Date of Occasion">
-    </form>
-      <button type="submit" id="button">Submit</button>
+      <input type="date" id="date" name="date" placeholder="Date of Occasion" required>
+    
+      <button type="submit" value="submit" id="button">Submit</button>
+      </form>
     </div>
 <!--
       <fieldset>
